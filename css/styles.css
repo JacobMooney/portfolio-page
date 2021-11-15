@@ -1,0 +1,175 @@
+/* CSS HEX
+--slate-gray: #58788cff;
+--light-cyan: #dcf2f0ff;
+--arylide-yellow: #d9c66aff;
+--light-french-beige: #bfa473ff;
+--rosy-brown: #bf8c80ff;
+
+//Alt pallet?
+#2A2438
+#352F44
+#5C5470
+#DBD8E3
+
+
+
+/* SCSS Gradient */
+
+/* $gradient-top: linear-gradient(0deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-right: linear-gradient(90deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-bottom: linear-gradient(180deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-left: linear-gradient(270deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-top-right: linear-gradient(45deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-bottom-right: linear-gradient(135deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-top-left: linear-gradient(225deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-bottom-left: linear-gradient(315deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
+$gradient-radial: radial-gradient(#58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff); */
+
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 0.0625rem black solid; */
+}
+
+:root {
+  --nav-color: #58788cff;
+  --main-color: #dcf2f0ff;
+  --secondary-color: rgb(22, 20, 11);
+  --accent-color: #bf8c80ff;
+  --extra-color: #bfa473ff;
+  --text-color: rgb(250, 250, 250);
+}
+
+.waves {
+  position: absolute;
+  z-index: -1;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background-color: var(--main-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1 h2 {
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 0.9375rem 0;
+  padding-top: 400px;
+}
+section.container>div>h1 {
+  font-size: 4rem;
+}
+
+p {
+  margin: 0.625rem 0;
+  padding: 0 0.2rem;
+  max-width: 60ch;
+  font-size: 1.6rem;
+}
+
+.navbar {
+  background-color: var(--nav-color);
+  color: var(--text-color);
+  height: 4.375rem;
+}
+
+.logo {
+  white-space: nowrap;
+}
+
+.text-center{
+  text-align: start;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 10;
+  margin: 0 0.3125rem;
+}
+
+.navbar a {
+  padding: 0.625rem;
+  margin: 0 0.3125rem;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover {
+  border-bottom: 4px var(--text-color) solid;
+}
+
+.navContainer {
+  max-width: 81.25rem;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.shared{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.skills{
+
+}
+
+section{
+  padding-top: 9em;
+}
+
+@media (max-width: 45em) {
+  .shared{
+    flex-direction: column-reverse;
+    flex-basis: 100%;
+  }
+  .navbar a {
+    padding: 0.625rem;
+    margin: 0 0.3125rem;
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .siteScreenShot{
+    flex-wrap: wrap;
+  }
+}
+
+.profilePic {
+  width: 25rem;
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0.1875rem 0.625rem;
+  padding: 0.3125rem;
+  background-color: var(--main-color);
+}
+
+.siteScreenShot {
+  max-width: 100%;
+  min-width: 24rem;
+  border-radius: 2%;
+  box-shadow: 0 0.1875rem 0.625rem;
+  width: 25rem;
+}
