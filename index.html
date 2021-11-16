@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
       integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -31,17 +35,18 @@
     </div>
     <img src="./shared/img/wave.svg" class="waves" />
     <!-- About Me Section -->
-    <section class="container shared">
-      <div>
-        <h1 class="text-start">Howdy!</h1>
+    <section class="container">
+      <div class="flexArea">
+        <h1 class="greeting">Howdy!</h1>
         <p>
           My name is Jacob, I am Texas based developer with a passion for
           programming and the web.
         </p>
-        <div>
-          I am a graduate of the NuCamp Coding Bootcamp 2021, where I completed
-          the Full Stack Web + Mobile Development program.
-        </div>
+        <p>
+          I am a graduate of the <strong>NuCamp Coding Bootcamp 2021</strong>,
+          where I completed the
+          <strong>Full Stack Web + Mobile Development</strong> program.
+        </p>
       </div>
       <div>
         <img
@@ -52,28 +57,34 @@
       </div>
     </section>
     <!-- Skills -->
-    <section class="container shared skills">
+    <section class="techContainer">
+      <h1>Tech, Tools, and Libraries</h1>
       <div>
-        <h1>Skills</h1>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>MongoDB</li>
-          <li>Express</li>
+          <li><img class="techIcon" src="./shared/img/icons/html-5.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/css-3.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/javascript.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/react.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/mongodb.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/express.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/nodejs-icon.svg" /></li>
+        </ul>
+      </div>
+      <hr>
+      <div>
+        <ul>
+          <li><img class="techIcon" src="./shared/img/icons/npm.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/git-icon.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/github-icon.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/redux.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/bootstrap.svg" /></li>
+          <li><img class="techIcon" src="./shared/img/icons/slack.svg" /></li>
         </ul>
       </div>
     </section>
     <!-- Projects -->
-    <section class="container shared">
-      <div>
-        <img
-          src="./shared/img/Canwelisten.png"
-          alt="Can We Listen website screenshot"
-          class="imgStyle siteScreenShot"
-        />
-      </div>
+    <h1>Projects</h1>
+    <section class="container">
       <div>
         <h1>CanWeListen?</h1>
         <span
@@ -82,8 +93,15 @@
           movie-goers.</span
         >
       </div>
+      <div>
+        <img
+          src="./shared/img/Canwelisten.png"
+          alt="Can We Listen website screenshot"
+          class="imgStyle siteScreenShot"
+        />
+      </div>
     </section>
-    <section class="container shared">
+    <section class="container">
       <div>
         <h1>Simply Fit</h1>
         <span
