@@ -25,14 +25,17 @@ $gradient-top-left: linear-gradient(225deg, #58788cff, #dcf2f0ff, #d9c66aff, #bf
 $gradient-bottom-left: linear-gradient(315deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
 $gradient-radial: radial-gradient(#58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff); */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rokkitt:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rokkitt:wght@600&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   /* border: 0.0625rem red solid; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -50,7 +53,7 @@ $gradient-radial: radial-gradient(#58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #b
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: var(--main-color);
 }
 
@@ -64,19 +67,28 @@ a {
 }
 
 h1 h2 {
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   font-size: 46px;
   font-weight: 900;
   line-height: 1.1;
   margin-top: 0.9375rem 0;
   padding-top: 400px;
 }
+
 section.container > div > h1 {
   font-size: 4rem;
+  text-align : center;
 }
 
-p,
-span {
+p {
+  margin: 0.625rem 0;
+  padding: 0 0.4rem;
+  max-width: 60ch;
+  font-size: 1.6rem;
+  color: rgb(24, 24, 24);
+}
+
+.container > div> div {
   margin: 0.625rem 0;
   padding: 0 0.4rem;
   max-width: 60ch;
@@ -127,12 +139,14 @@ span {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  overflow:auto
 }
 
 .flexArea {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: center;
 }
 
 .greeting {
@@ -156,9 +170,9 @@ span {
   min-width: 4.375rem;
 }
 
-.techIcon{
+.techIcon {
   max-width: 100%;
-  padding: 0 2em ;
+  padding: 0 1em;
   flex-grow: 1;
 }
 
@@ -167,19 +181,21 @@ body > h1 {
   flex-direction: column;
   margin-inline: auto;
   width: min(90%, 70.5rem);
-  
+  margin-bottom: 1em;
+  text-decoration: underline;
 }
 
 section {
   padding-bottom: 8em;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 940px) {
   .container {
     flex-direction: column-reverse;
     flex-basis: 100%;
+    align-items: center;
   }
-  .techIcon{
+  .techIcon {
     max-width: 100%;
     width: auto;
     padding: 0 0.2em;
@@ -195,6 +211,7 @@ section {
   .siteScreenShot {
     flex-wrap: wrap;
   }
+  
 }
 
 .profilePic {
@@ -210,6 +227,7 @@ section {
 .siteScreenShot {
   max-width: 100%;
   min-width: 24rem;
+  aspect-ratio: 16 / 9;
   border-radius: 2%;
   box-shadow: 0 0.1875rem 0.625rem;
   width: 25rem;
