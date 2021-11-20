@@ -176,7 +176,7 @@ p {
   flex-grow: 1;
 }
 
-body > h1 {
+.sectionHeader {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
@@ -187,6 +187,24 @@ body > h1 {
 
 section {
   padding-bottom: 8em;
+}
+
+.profilePic {
+  width: 60rem;
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0.1875rem 0.625rem;
+  padding: 0.3125rem;
+  background-color: var(--main-color);
+}
+
+.siteScreenShot {
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 2%;
+  box-shadow: 0 0.1875rem 0.625rem;
+  width: 30rem;
 }
 
 @media (max-width: 940px) {
@@ -211,24 +229,43 @@ section {
   .siteScreenShot {
     flex-wrap: wrap;
   }
-  
+  .profilePic {
+    width: 28rem;
+  }
 }
 
-.profilePic {
-  width: 60rem;
-  display: block;
-  max-width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 0.1875rem 0.625rem;
-  padding: 0.3125rem;
-  background-color: var(--main-color);
-}
-
-.siteScreenShot {
-  max-width: 100%;
-  min-width: 24rem;
-  aspect-ratio: 16 / 9;
-  border-radius: 2%;
-  box-shadow: 0 0.1875rem 0.625rem;
-  width: 25rem;
+@media (max-width: 475px) {
+  .container {
+    flex-direction: column-reverse;
+    flex-basis: 100%;
+    align-items: center;
+  }
+  .techIcon {
+    max-width: 100%;
+    width: auto;
+    padding: 0 0.2em;
+  }
+  .techContainer > div > ul {
+    height: 5em;
+    min-width: 10rem;
+  }
+  .navbar a {
+    padding: 0.2em;
+    margin: 0 0.2em;
+    font-size: 0.8rem;
+  }
+  section.container > div > h1 {
+    font-size: 2rem;
+    text-align : center;
+  }
+  .siteScreenShot {
+    width: 21.5625rem;
+  }
+  .profilePic {
+    width: 15rem;
+  }
+  .container > div> div {
+    margin: 0.425rem 0;
+    font-size: 1.2rem;
+  }
 }
