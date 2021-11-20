@@ -34,6 +34,11 @@ $gradient-radial: radial-gradient(#58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #b
   /* border: 0.0625rem red solid; */
 }
 
+.link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 html {
   scroll-behavior: smooth;
 }
