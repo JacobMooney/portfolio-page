@@ -44,10 +44,10 @@ html {
 }
 
 :root {
-  --nav-color: #58788cff;
-  --main-color: #dcf2f0ff;
+  --nav-color: #606c38;
+  --main-color: #fefae0;
   --secondary-color: rgb(22, 20, 11);
-  --accent-color: #bf8c80ff;
+  --accent-color: #283618;
   --extra-color: #bfa473ff;
   --text-color: rgb(250, 250, 250);
 }
@@ -82,18 +82,10 @@ h1 h2 {
 
 section.container > div > h1 {
   font-size: 4rem;
-  text-align : center;
+  text-align: center;
 }
 
 p {
-  margin: 0.625rem 0;
-  padding: 0 0.4rem;
-  max-width: 60ch;
-  font-size: 1.6rem;
-  color: rgb(24, 24, 24);
-}
-
-.container > div> div {
   margin: 0.625rem 0;
   padding: 0 0.4rem;
   max-width: 60ch;
@@ -144,7 +136,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  overflow:auto
+  overflow: auto;
 }
 
 .flexArea {
@@ -191,7 +183,7 @@ p {
 }
 
 section {
-  padding-bottom: 8em;
+  padding-bottom: 6em;
 }
 
 .profilePic {
@@ -199,9 +191,9 @@ section {
   display: block;
   max-width: 100%;
   border-radius: 50%;
-  box-shadow: 0 0.1875rem 0.625rem;
+  box-shadow: 0 0.1875rem 0.25rem;
   padding: 0.3125rem;
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
 }
 
 .siteScreenShot {
@@ -261,7 +253,7 @@ section {
   }
   section.container > div > h1 {
     font-size: 2rem;
-    text-align : center;
+    text-align: center;
   }
   .siteScreenShot {
     width: 21.5625rem;
@@ -269,7 +261,7 @@ section {
   .profilePic {
     width: 15rem;
   }
-  .container > div> div {
+  .container > div > div {
     margin: 0.425rem 0;
     font-size: 1.2rem;
   }
