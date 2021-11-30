@@ -4,8 +4,7 @@
   "description": "Landing page for portfolio and about me",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jacob Mooney",
   "license": "ISC"
