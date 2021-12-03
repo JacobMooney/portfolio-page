@@ -1,30 +1,3 @@
-/* CSS HEX
---slate-gray: #58788cff;
---light-cyan: #dcf2f0ff;
---arylide-yellow: #d9c66aff;
---light-french-beige: #bfa473ff;
---rosy-brown: #bf8c80ff;
-
-//Alt pallet?
-#2A2438
-#352F44
-#5C5470
-#DBD8E3
-
-
-
-/* SCSS Gradient */
-
-/* $gradient-top: linear-gradient(0deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-right: linear-gradient(90deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-bottom: linear-gradient(180deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-left: linear-gradient(270deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-top-right: linear-gradient(45deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-bottom-right: linear-gradient(135deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-top-left: linear-gradient(225deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-bottom-left: linear-gradient(315deg, #58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff);
-$gradient-radial: radial-gradient(#58788cff, #dcf2f0ff, #d9c66aff, #bfa473ff, #bf8c80ff); */
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rokkitt:wght@600&display=swap");
 
 * {
@@ -69,6 +42,40 @@ body {
 a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+.btnStyle {
+  background-color: var(--text-color);
+  border-radius: 100px;
+  box-shadow: var(--extra-color) 0 -25px 18px -14px inset;
+  color: var(--secondary-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 0.4375rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1.125rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0.3125rem auto;
+}
+
+.btnStyle:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05);
+}
+
+.centerBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 h1 h2 {
@@ -137,6 +144,7 @@ p {
   flex-direction: row;
   flex-grow: 1;
   overflow: auto;
+  padding-top: 2em;
 }
 
 .flexArea {
@@ -158,6 +166,20 @@ p {
   flex-grow: 1;
 }
 
+.contactContainer {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+li {
+  list-style-type: none;
+}
+
 .techContainer > div > ul {
   list-style-type: none;
   display: flex;
@@ -171,6 +193,18 @@ p {
   max-width: 100%;
   padding: 0 1em;
   flex-grow: 1;
+}
+
+.contactIcon {
+  max-width: 100%;
+  width: 10rem;
+  transition: 0.3s;
+  opacity:0.9;
+}
+
+.contactIcon:hover {
+  opacity:1;
+  transform: scale(1.2);
 }
 
 .sectionHeader {
@@ -202,6 +236,7 @@ section {
   border-radius: 2%;
   box-shadow: 0 0.1875rem 0.625rem;
   width: 30rem;
+  transition: 0.4s;
 }
 
 @media (max-width: 940px) {
