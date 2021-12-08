@@ -45,10 +45,10 @@ a {
 }
 
 .btnStyle {
-  background-color: var(--text-color);
+  background-color: var(--nav-color);
   border-radius: 100px;
-  box-shadow: var(--extra-color) 0 -25px 18px -14px inset;
-  color: var(--secondary-color);
+  box-shadow: var(--accent-color) 0 -25px 18px -14px inset;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
