@@ -204,6 +204,7 @@ li {
   width: 10rem;
   transition: 0.3s;
   opacity:0.9;
+  padding: 0 0.2em;
 }
 
 .contactIcon:hover {
@@ -232,6 +233,8 @@ section {
   box-shadow: 0 0.1875rem 0.25rem;
   padding: 0.3125rem;
   background-color: var(--accent-color);
+  animation: fadeIn;
+  animation-duration: 0.5s;
 }
 
 .siteScreenShot {
@@ -241,6 +244,7 @@ section {
   box-shadow: 0 0.1875rem 0.625rem;
   width: 30rem;
   transition: 0.4s;
+  
 }
 
 @media (max-width: 940px) {
