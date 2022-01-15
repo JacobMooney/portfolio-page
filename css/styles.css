@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 0.0625rem red solid; */
 }
 
 .link {
@@ -149,6 +148,7 @@ p {
   flex-grow: 1;
   overflow: auto;
   padding-top: 2em;
+  overflow:visible
 }
 
 .flexArea {
@@ -226,7 +226,7 @@ section {
 }
 
 .profilePic {
-  width: 60rem;
+  width: 45rem;
   display: block;
   max-width: 100%;
   border-radius: 50%;
