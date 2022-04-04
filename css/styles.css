@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* border: 1px solid red; */
 }
 
 .link {
@@ -51,10 +53,10 @@ a {
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 16px;
@@ -68,6 +70,7 @@ a {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
+  transition: 200ms;
 }
 
 .btnStyle:hover {
@@ -91,16 +94,23 @@ h1 h2 {
   padding-top: 400px;
 }
 
-section.container > div > h1 {
-  font-size: 4rem;
+.greeting {
   text-align: center;
+  font-size: 8.5rem;
+  /* margin-top: 1em; */
+  justify-content: center;
+  font-family: "Hurricane", sans-serif;
+}
+
+.greeting + p {
+  font-weight: 600;
 }
 
 p {
-  margin: 0.625rem 0;
-  padding: 0 0.4rem;
-  max-width: 60ch;
+  margin: 0.625em 0;
+  padding: 0 0.4em;
   font-size: 1.6rem;
+  line-height: 1.4em;
   color: rgb(24, 24, 24);
 }
 
@@ -149,8 +159,19 @@ p {
   flex-direction: row;
   flex-grow: 1;
   overflow: auto;
-  padding-top: 2em;
-  overflow:visible
+  overflow: visible;
+  margin: 7em auto;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-of-type(3) {
+  margin-top: 0;
+}
+
+.container > div {
+  width: 75ch;
+  margin: 0 1em;
 }
 
 .flexArea {
@@ -158,19 +179,6 @@ p {
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-}
-
-.greeting {
-  margin-top: 1em;
-  justify-content: center;
-}
-
-.techContainer {
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
 
 .contactContainer {
@@ -183,8 +191,30 @@ p {
   padding-top: 2em;
 }
 
+.contactIcon {
+  max-width: 100%;
+  width: 10em;
+  transition: 0.3s;
+  opacity: 0.9;
+  padding: auto 0.2em;
+}
+
+.contactIcon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
 li {
   list-style-type: none;
+}
+
+.techContainer {
+  margin-inline: auto;
+  width: min(90%, 70.5em);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0em auto 7em auto;
 }
 
 .techContainer > div > ul {
@@ -202,19 +232,6 @@ li {
   flex-grow: 1;
 }
 
-.contactIcon {
-  max-width: 100%;
-  width: 10rem;
-  transition: 0.3s;
-  opacity:0.9;
-  padding: 0 0.2em;
-}
-
-.contactIcon:hover {
-  opacity:1;
-  transform: scale(1.2);
-}
-
 .sectionHeader {
   display: flex;
   flex-direction: column;
@@ -222,10 +239,6 @@ li {
   width: min(90%, 70.5rem);
   margin-bottom: 1em;
   text-decoration: underline;
-}
-
-section {
-  padding-bottom: 10em;
 }
 
 .profilePic {
@@ -241,13 +254,11 @@ section {
 }
 
 .siteScreenShot {
+  object-fit: cover;
   max-width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 2%;
+  border-radius: 0.2em;
   box-shadow: 0 0.1875rem 0.625rem;
-  width: 30rem;
   transition: 0.4s;
-  
 }
 
 @media (max-width: 940px) {
@@ -264,10 +275,10 @@ section {
   .navbar a {
     padding: 0.625rem;
     margin: 0 0.3125rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .logo {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .siteScreenShot {
     flex-wrap: wrap;
@@ -278,6 +289,11 @@ section {
 }
 
 @media (max-width: 475px) {
+  .waves {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
   .container {
     flex-direction: column-reverse;
     flex-basis: 100%;
