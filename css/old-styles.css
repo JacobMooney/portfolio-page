@@ -198,8 +198,8 @@ li {
 }
 
 .techContainer {
+  max-width: min(90%, 70.5em);
   margin-inline: auto;
-  width: min(90%, 70.5em);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
